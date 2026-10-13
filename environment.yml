@@ -1,0 +1,12 @@
+name: homework
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - notebook
+  - ipykernel
+  - nbformat
+  - nbclient
+  - pip
+  - pip:
+      - pyzmq==26.4.0
