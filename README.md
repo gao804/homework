@@ -1,6 +1,6 @@
 # homework
 
-高琴（20244080227）的 Python 作业，包含 EXP01 和 HW01 的完整 Notebook、中文解题说明和实际运行结果。
+高琴（20244080227）的 Python 作业，包含 EXP01、HW01、EXP02、HW02 的完整 Notebook、中文解题说明和实际运行结果。
 
 ## 作业文件
 
@@ -8,6 +8,8 @@
 | --- | --- | --- |
 | EXP01 | [20244080227_高琴_exp01.ipynb](EXP01/20244080227_高琴_exp01.ipynb) | 基本运算、函数与循环、容器统计、文件与异常、类与复制，共五个实验 |
 | HW01 | [20244080227_高琴_hw01.ipynb](HW01/20244080227_高琴_hw01.ipynb) | 简单函数、欧几里得算法、欧拉数近似、整数幂判断 |
+| EXP02 | [20244080227_高琴_exp02.ipynb](EXP02/20244080227_高琴_exp02.ipynb) | NumPy 数组与索引、随机抽样与缺失值、SciPy 与 Matplotlib、pandas |
+| HW02 | [20244080227_高琴_hw02.ipynb](HW02/20244080227_高琴_hw02.ipynb) | 字符串与列表函数、元组表示向量和矩阵、Vector 类 |
 
 原题位于 [assignments](assignments/)。EXP01 的解析模块为 [student_utils.py](EXP01/student_utils.py)，输入及输出文件位于 [exp01_data](EXP01/exp01_data/)。
 
@@ -30,7 +32,7 @@ jupyter notebook
 conda run --no-capture-output -n homework python scripts/run_notebooks.py
 ```
 
-脚本分别启动两个全新内核，按顺序运行所有代码单元；没有未捕获异常时保存运行结果。每个 Notebook 最后的检查单元会验证关键结果和边界输入。
+脚本为每个 Notebook 启动一个全新内核，按顺序运行所有代码单元；没有未捕获异常时保存运行结果。每个 Notebook 最后的检查单元会验证关键结果和边界输入。
 
 环境文件固定了 pip 版 `pyzmq==26.4.0`：本机初次安装的 conda 版 pyzmq/ZeroMQ 组合启动内核时出现 `Bad file descriptor`，换用上述 wheel 后重新验证。
 

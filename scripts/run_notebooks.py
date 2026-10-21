@@ -15,8 +15,8 @@ def main():
         raise RuntimeError("Activate homework or use conda run -n homework.")
     root = Path(__file__).resolve().parents[1]
     notebooks = sorted(root.glob("*/*_*.ipynb"))
-    if len(notebooks) != 2:
-        raise RuntimeError(f"Expected 2 notebooks, found {len(notebooks)}")
+    if len(notebooks) != 4:
+        raise RuntimeError(f"Expected 4 notebooks, found {len(notebooks)}")
     for path in notebooks:
         notebook = nbformat.read(path, as_version=4)
         nbformat.validate(notebook)

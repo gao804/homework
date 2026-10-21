@@ -7,6 +7,10 @@ dependencies:
   - ipykernel
   - nbformat
   - nbclient
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
   - pip
   - pip:
       - pyzmq==26.4.0
